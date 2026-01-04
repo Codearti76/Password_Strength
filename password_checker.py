@@ -1,8 +1,7 @@
 password = input("Enter your password: ")
 common_passwords = [
     "123456", "password", "admin", "qwerty",
-    "abc123", "password123", "12345678"
-]
+    "abc123", "password123", "12345678"]
 
 if password.lower() in common_passwords:
     print("❌ This password is too common. Choose a stronger one.")
