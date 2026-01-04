@@ -8,3 +8,9 @@ Strong passwords are important to protect user accounts from attacks such as bru
 This project simulates login attempt limits to prevent brute-force attacks.
 The account is locked after 3 failed attempts.
 
+## 🧰 Mini Cybersecurity Toolkit
+This project contains multiple beginner-level cybersecurity tools:
+1. Password Strength Checker
+2. Brute-Force Login Protection Simulation
+
+The project demonstrates basic defensive security concepts.
