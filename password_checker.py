@@ -1,44 +1,30 @@
 password = input("Enter your password: ")
-score =0
-if len(password) >= 8:
-    score += 1
-if any(char.isupper() for char in password):
-    score += 1
-if any(char.islower() for char in password):
-    score += 1
-if any(char.isdigit() for char in password):
-    score += 1
-if any(char in "!@#$%^&*()" for char in password):
-    score += 1
-if score <= 2:
-    print("Weak password")
-elif score == 3 or score == 4:
-    print("Medium password")
+common_passwords = [
+    "123456", "password", "admin", "qwerty",
+    "abc123", "password123", "12345678"
+]
+
+if password.lower() in common_passwords:
+    print("❌ This password is too common. Choose a stronger one.")
+has_upper = False
+has_lower = False
+has_digit = False
+has_special = False
+special_chars = "@#$%!&*"
+
+for char in password:
+    if char.isupper():
+        has_upper = True
+    elif char.islower():
+        has_lower = True
+    elif char.isdigit():
+        has_digit = True
+    elif char in special_chars:
+        has_special = True
+
+if (len(password) >= 8 and has_upper and has_lower and has_digit and has_special):
+    print("✅ Strong Password")
+elif (len(password) >= 6 and has_upper and has_lower and has_digit):
+    print("⚠️ Medium Password")
 else:
-    print("Strong password")
-password = input("Enter your password: ")
-
-score = 0
-
-if len(password) >= 8:
-    score += 1
-
-if any(char.isupper() for char in password):
-    score += 1
-
-if any(char.islower() for char in password):
-    score += 1
-
-if any(char.isdigit() for char in password):
-    score += 1
-
-if any(char in "!@#$%^&*()" for char in password):
-    score += 1
-
-if score <= 2:
-    print("Weak password")
-elif score == 3 or score == 4:
-    print("Medium password")
-else:
-    print("Strong password")
-
+    print("❌ Weak Password")
