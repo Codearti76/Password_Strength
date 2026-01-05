@@ -14,3 +14,8 @@ This project contains multiple beginner-level cybersecurity tools:
 2. Brute-Force Login Protection Simulation
 
 The project demonstrates basic defensive security concepts.
+## 🔍 Key Learnings
+- Understanding password-based attacks
+- Implementing brute-force protection
+- Applying defensive cybersecurity principles
+- Converting a CLI-based Python tool into a web interface
