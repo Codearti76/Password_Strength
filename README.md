@@ -19,3 +19,5 @@ The project demonstrates basic defensive security concepts.
 - Implementing brute-force protection
 - Applying defensive cybersecurity principles
 - Converting a CLI-based Python tool into a web interface
+### 💡 User Guidance
+The tool provides actionable suggestions to help users create stronger passwords.
